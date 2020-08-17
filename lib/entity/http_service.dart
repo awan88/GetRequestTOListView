@@ -7,8 +7,8 @@ import 'package:http/http.dart';
 import 'datamusick.dart';
 
 class HttpService {
-  //final String postsURL = "https://jsonplaceholder.typicode.com/posts";
-  final String postsURL = "http://crocodic.net/asdpinfo/public/api/kapal";
+  final String postsURL = "https://jsonplaceholder.typicode.com/posts";
+
 
   Future<List<DataMusicks>> getPosts() async {
     Response res = await get(postsURL);
